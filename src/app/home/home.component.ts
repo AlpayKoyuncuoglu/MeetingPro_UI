@@ -51,7 +51,7 @@ export class HomeComponent {
           error: (err:any) => this.errorMessage = 'Failed to update meeting'
         });
       } else {
-        // Add new meeting
+        // Add new meetinzg
         this.meetingsService.addMeeting(this.meetingForm.value).subscribe({
           next: () => {
             this.loadMeetings();
@@ -81,29 +81,7 @@ export class HomeComponent {
   }
 
   logout(): void {
-    // Oturum kapatma işlemi (örneğin, token'ı kaldırmak)
-    localStorage.removeItem('token'); // Token'ın saklandığı yer
+    localStorage.removeItem('token'); 
     this.router.navigate(['/login']);
   }
 }
-//   meetings: any[] = [];
-//   errorMessage: string | null = null;
-
-//   constructor(private meetingService: MeetingService) {}
-
-//   ngOnInit(): void {
-//     this.loadMeetings();
-//   }
-
-//   loadMeetings(): void {
-//     this.meetingService.getMeetings().subscribe(
-      
-//       {
-//       next: (data:any) => {this.meetings = data,
-//       console.log(data);
-
-//       },      
-//       error: (err:any) => this.errorMessage = 'Failed to load meetings'
-//     });
-//   }
-// }

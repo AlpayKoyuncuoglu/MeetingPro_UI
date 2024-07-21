@@ -1,86 +1,8 @@
-/* .no-meetings {
-    text-align: center;
-    margin-top: 50px;
-  }
-  
-  .no-meetings h3 {
-    font-size: 24px;
-    color: #ff5722;
-  }
-  
-  .no-meetings p {
-    font-size: 18px;
-    color: #757575;
-  }
-  
-  .no-meetings img {
-    margin-top: 20px;
-    width: 200px;
-    height: auto;
-  }
-  
-  .error {
-    color: red;
-    font-weight: bold;
-  }
-  
-  .meetings-table {
-    width: 80%; 
-    border-collapse: collapse;
-    margin-top: 20px;
-    margin-left: auto; 
-    margin-right: auto;
-  }
-  
-  .meetings-table th, .meetings-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-  }
-  
-  .meetings-table th {
-    background-color: #f2f2f2;
-    color: #333;
-  }
-  
-  .meetings-table tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-  
-  .meetings-table tr:hover {
-    background-color: #ddd;
-  }
-  
-  .meetings-table th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #4CAF50;
-    color: white;
-  }
-  
-  h2 {
-    text-align: center; 
-    color: #333; 
-    font-size: 28px; 
-        margin-top: 20px; 
-    margin-bottom: 20px; 
-    font-family: 'Arial', sans-serif;
-    border-bottom: 2px solid #4CAF50;
-    display: inline-block;     width: 100%;
-    padding-bottom: 10px; 
-  }
-  .container {
-    text-align: center; 
-    width: 100%; 
-  } */
-
   body {
     margin: 0;
     font-family: Arial, sans-serif;
   }
   
-  /* Navigasyon barı stilleri */
   .navbar {
     background-color: #4CAF50;;
     padding: 10px 20px;
@@ -126,8 +48,8 @@
   
 
   .container {
-    text-align: center; /* Konteyner içindeki her şeyi ortalar */
-    width: 100%; /* Konteyner genişliği */
+    text-align: center; 
+    width: 100%; 
   }
   
   .no-meetings {
@@ -206,11 +128,11 @@
   }
   
   .meetings-table {
-    width: 80%; /* Genişliği biraz küçülttüm ki ortalamak daha kolay olsun */
+    width: 80%; 
     border-collapse: collapse;
     margin-top: 20px;
-    margin-left: auto; /* Ortalamak için ekledim */
-    margin-right: auto; /* Ortalamak için ekledim */
+    margin-left: auto; 
+    margin-right: auto; 
   }
   
   .meetings-table th, .meetings-table td {

@@ -1,45 +1,4 @@
-<!-- <p>register works!</p>
-<h2>Register</h2>
-<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
-  <div>
-    <label for="username">Username:</label>
-    <input id="username" formControlName="username">
-  </div>
-  <div>
-    <label for="password">Password:</label>
-    <input id="password" type="password" formControlName="password">
-  </div>
-  <div>
-    <label for="confirmPassword">Confirm Password:</label>
-    <input id="confirmPassword" type="password" formControlName="confirmPassword">
-  </div>
-  <button type="submit">Register</button>
-  <div *ngIf="errorMessage">{{ errorMessage }}</div>
-</form>
-<p>Don't have an account? <a routerLink="/register">Register here</a></p> -->
 
-<!-- <h2>Register</h2>
-<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
-  <div>
-    <label for="username">Username:</label>
-    <input id="username" formControlName="username" />
-  </div>
-  <div>
-    <label for="password">Password:</label>
-    <input id="password" type="password" formControlName="password" />
-  </div>
-  <div>
-    <label for="confirmPassword">Confirm Password:</label>
-    <input id="confirmPassword" type="password" formControlName="confirmPassword" />
-  </div>
-  <button type="submit">Register</button>
-  <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
-</form>
-
-<div class="login-link">
-  <p>Already have an account? <a routerLink="/login">Login here</a></p>
-</div>
- -->
  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" enctype="multipart/form-data">
   <div>
     <label for="username">Username:</label>
