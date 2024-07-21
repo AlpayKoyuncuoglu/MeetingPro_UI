@@ -1,0 +1,102 @@
+<!-- <h2>Meetings</h2>
+<div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+<div *ngIf="!errorMessage && meetings.length === 0" class="no-meetings">
+  <h3>No meetings available</h3>
+  <p>There are currently no meetings scheduled. Please check back later or add a new meeting.</p>
+  <img src="path_to_your_image" alt="No meetings" />
+</div>
+<table *ngIf="!errorMessage && meetings.length > 0" class="meetings-table">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Start Date</th>
+      <th>End Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let meeting of meetings">
+      <td>{{ meeting.name }}</td>
+      <td>{{ meeting.description }}</td>
+      <td>{{ meeting.startDate | date:'short' }}</td>
+      <td>{{ meeting.endDate | date:'short' }}</td>
+    </tr>
+  </tbody>
+</table> -->
+
+<!-- <div class="container">
+    <h2>Meetings</h2>
+  </div> -->
+
+  <nav class="navbar">
+    <div class="nav-content">
+      <div class="logo">
+        <!-- Logo veya site başlığı -->
+        <!-- <a routerLink="/">MyApp</a> -->
+      </div>
+      <div class="nav-title">
+        <h2>Meetings</h2>
+      </div>
+      <div class="nav-links">
+        <!-- Diğer menü öğeleri -->
+        <button (click)="logout()">Logout</button>
+      </div>
+    </div>
+  </nav>
+  
+  <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+  <div *ngIf="!errorMessage && meetings.length === 0" class="no-meetings">
+    <h3>No meetings available</h3>
+    <p>There are currently no meetings scheduled. Please check back later or add a new meeting.</p>
+    <img src="path_to_your_image" alt="No meetings" />
+  </div>
+  
+  <!-- Meeting Form -->
+  <div class="meeting-form">
+    <h3>Add / Update Meeting</h3>
+    <form [formGroup]="meetingForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label for="name">Title:</label>
+        <input id="name" formControlName="name" />
+      </div>
+      <div>
+        <label for="description">Description:</label>
+        <input id="description" formControlName="description" />
+      </div>
+      <div>
+        <label for="startDate">Start Date:</label>
+        <input id="startDate" type="datetime-local" formControlName="startDate" />
+      </div>
+      <div>
+        <label for="endDate">End Date:</label>
+        <input id="endDate" type="datetime-local" formControlName="endDate" />
+      </div>
+      <button type="submit">Save</button>
+      <button type="button" (click)="onReset()">Reset</button>
+    </form>
+  </div>
+  
+  <table *ngIf="!errorMessage && meetings.length > 0" class="meetings-table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let meeting of meetings">
+        <td>{{ meeting.name }}</td>
+        <td>{{ meeting.description }}</td>
+        <td>{{ meeting.startDate | date:'short' }}</td>
+        <td>{{ meeting.endDate | date:'short' }}</td>
+        <td>
+          <button (click)="onEdit(meeting)">Edit</button>
+          <button (click)="onDelete(meeting.id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  

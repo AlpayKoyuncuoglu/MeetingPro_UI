@@ -1,0 +1,10 @@
+<h2>Meetings</h2>
+<div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+<ul>
+  <li *ngFor="let meeting of meetings">
+    <h3>{{ meeting.title }}</h3>
+    <p>{{ meeting.description }}</p>
+    <p>Start: {{ meeting.startDate }}</p>
+    <p>End: {{ meeting.endDate }}</p>
+  </li>
+</ul>

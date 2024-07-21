@@ -1,0 +1,80 @@
+/* Example styles for the login component */
+form {
+    max-width: 400px;
+    margin: auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  div {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: .5rem;
+  }
+  
+  input {
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    width: 100%;
+    padding: .5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 1rem;
+  }
+  
+  /* Styling for the register link */
+  .register-link {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .register-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .register-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Media queries for responsive design */
+@media (max-width: 600px) {
+    form {
+      padding: 0.5rem;
+    }
+  
+    button {
+      font-size: 0.875rem;
+    }
+  
+    .register-link {
+      margin-top: 0.5rem;
+    }
+  }
+  
